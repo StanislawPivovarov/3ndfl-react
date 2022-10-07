@@ -72,7 +72,8 @@ function Header() {
               <SubParagraph className="main-page-filling-sub-following">
                 Сопровождение до завершения проверки декларации
               </SubParagraph>
-<FormCard/>
+<FormCard text="Заполните заявку и мы свяжемся с Вами в ближайшее время!
+"/>
       </Filling>
 
     </MainPage>

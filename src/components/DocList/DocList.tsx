@@ -1,6 +1,6 @@
 import React from "react";
 import { Collapse, Row, Col } from "antd";
-import { AccordionWrapper } from "../../styles/Accordion";
+import { AccordionWrapper, Header } from "../../styles/Docs";
 const { Panel } = Collapse;
 const text =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum nisl ut scelerisque ultrices. Quisque nec consequat odio, eu interdum elit. Suspendisse sodales sagittis urna. Fusce non nisi dapibus, convallis arcu eget, suscipit elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In molestie quam et sem dignissim, porta placerat lectus ultricies. Aliquam accumsan tortor sed tempus auctor. Quisque eget justo in arcu efficitur efficitur. Vivamus tristique dapibus lacus quis rhoncus. Donec posuere vel enim vitae tempor. Sed id sapien porttitor, congue orci nec, varius elit. Pellentesque ac risus tortor. Suspendisse in nunc sit amet turpis euismod placerat. Integer imperdiet ut metus quis sodales. Curabitur sit amet sapien enim.";
@@ -9,7 +9,7 @@ function Docs() {
     <AccordionWrapper>
       <Row>
         <Col span={24}>
-          <p className="list-docs">Список необходимых документов</p>
+          <Header className="list-docs">Список необходимых документов</Header>
           <Collapse accordion>
             <Panel
               header="Необходимые документы при имущественном вычете при покупке квартиры"

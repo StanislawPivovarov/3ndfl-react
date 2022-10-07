@@ -3,11 +3,15 @@ import {Button, Checkbox, Form, Input, Select} from "antd";
 import {WrapperCard} from "../../styles/Cards"
 const { Option } = Select;
 
-function FormCard(){
+interface propsText {
+  text: string;
+}
+
+function FormCard(props:propsText){
     return(
         <div className="form">
             <WrapperCard className="form-wrapper">
-                <p className="form-header">Заполните заявку и мы свяжемся с Вами в ближайшее время!</p>
+                <p className="form-header">{props.text}</p>
                 <p className="phone-number">Телефон для связи</p>
                 <Form
       name="basic"

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const WorkWrapper = styled.div`
-  padding: 60px 30px 155px 30px;
+  padding: 60px 30px 15px 30px;
 `;
 export const Circle = styled.div`
   height: 40px;
@@ -55,4 +55,11 @@ export const Line = styled.div`
   margin-left: auto;
   margin-right: auto;
   display: flex;
+`;
+export const Header = styled.h1`
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 35px;
 `;

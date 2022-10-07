@@ -1,10 +1,10 @@
 import React from "react";
 import RoadMapItems from "../../Cards/Form/Roadmap";
-import {WorkWrapper} from "../../styles/Roadmap"
+import {WorkWrapper, Header} from "../../styles/Roadmap"
 function Work(){
     return(
         <WorkWrapper>
-            <h1>Как мы работаем</h1>
+            <Header>Как мы работаем</Header>
             <RoadMapItems 
             number={1} 
             name="Закажите декларацию 3-НДФЛ, получите БЕСПЛАТНУЮ консультацию специалиста"
