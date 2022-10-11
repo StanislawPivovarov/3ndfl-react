@@ -6,10 +6,9 @@ import Work from './components/Work';
 import Docs from './components/DocList';
 import Form from './components/Form'
 import Map from './components/Map';
-
 function App() {
   return (
-    <div className="App">
+      <div className="App">
       <Header/>
       <Main/>
       <Work/>
@@ -17,6 +16,8 @@ function App() {
       <Form/>
       <Map/>
     </div>
+
+   
   );
 }
 

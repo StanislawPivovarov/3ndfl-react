@@ -7,8 +7,8 @@ const text =
 function Docs() {
   return (
     <AccordionWrapper>
-      <Row>
-        <Col span={24}>
+      <Row justify="center">
+        <Col xs={23} md={22} lg={20} xl={19}>
           <Header className="list-docs">Список необходимых документов</Header>
           <Collapse accordion>
             <Panel

@@ -1,15 +1,16 @@
 import React from "react";
 import {Button, Checkbox, Form, Input, Select} from "antd";
-import {WrapperCard} from "../../styles/Cards"
+import {FormsCard, WrapperCard} from "../../styles/Cards"
 const { Option } = Select;
 
 interface propsText {
   text: string;
+  style: React.CSSProperties;
 }
 
 function FormCard(props:propsText){
     return(
-        <div className="form">
+        <FormsCard className="form" style={props.style}>
             <WrapperCard className="form-wrapper">
                 <p className="form-header">{props.text}</p>
                 <p className="phone-number">Телефон для связи</p>
@@ -25,7 +26,7 @@ function FormCard(props:propsText){
         rules={[
           {
             required: true,
-            message: 'Введите Ваше номер',
+            message: 'Введите Ваш номер',
           },
         ]}
       >
@@ -59,7 +60,7 @@ function FormCard(props:propsText){
     </Form>
 
             </WrapperCard>
-        </div>
+        </FormsCard>
     );
 }
 export default FormCard;

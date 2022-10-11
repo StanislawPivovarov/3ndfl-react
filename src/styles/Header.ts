@@ -10,11 +10,19 @@ export const MainPage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000;
+  @media(min-width: 992px){
+    height: 100vh
+  }
   `;
 
 export const MainPageHeader = styled.div`
   display: flex;
   flex-direction: column;
+  @media(min-width: 992px){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 export const Logotype = styled.img`
@@ -90,6 +98,9 @@ font-style: normal;
 font-weight: 600;
 font-size: 36px;
 line-height: 60px;
+@media(min-width: 1200px){
+  font-size: 54px;
+}
 `
 export const SubParagraph = styled.p`
 color: #fff;
@@ -98,8 +109,22 @@ font-style: normal;
 font-weight: 600;
 font-size: 18px;
 line-height: 22px;
+@media(min-width: 1200px){
+  font-size: 24px;
+}
 `
 
 export const Filling = styled.div`
-padding: 48px 16px 64px 16px;
+display: flex;
+flex-direction: column;
+padding: 36px 0px 64px 0px;
+@media(min-width: 992px){
+  flex-direction: row;
+  justify-content: space-between;
+}
+`
+
+export const FillingWrapper = styled.div`
+display: flex;
+flex-direction: column;
 `

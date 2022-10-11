@@ -16,17 +16,18 @@ import {
   ButtonPosition,
   HeaderParagraph,
   SubParagraph,
-  Filling
+  Filling,
+  FillingWrapper,
 } from "../../styles/Header";
 import FormCard from "../../Cards/Form";
-import { Col, Row, Button } from "antd";
+import { Button, Col, Row } from "antd";
 
 function Header() {
   return (
     <MainPage className="main-page">
-      <MainPageHeader className="main-page-header">
-        <Row>
-          <Col span={24}>
+      <Row justify="center">
+        <Col xs={23} md={22} lg={20} xl={19}>
+          <MainPageHeader className="main-page-header">
             <Logotype src={logo} className="main-page-logo" alt="logo" />
             <MainPagePhone className="main-page-phone">
               <MainPagePhoneWrapper className="main-page-phone-wrapper">
@@ -55,11 +56,10 @@ function Header() {
                 </ButtonWrap>
               </Button>
             </ButtonPosition>
-          </Col>
-        </Row>
-      </MainPageHeader>
-      <Filling className="main-page-filling">
-      <HeaderParagraph className="main-page-filling-headline">
+          </MainPageHeader>
+          <Filling className="main-page-filling">
+            <FillingWrapper className="main-page-filling-wrapper">
+              <HeaderParagraph className="main-page-filling-headline">
                 Заполним декларацию <br />
                 3-НДФЛ
               </HeaderParagraph>
@@ -72,10 +72,15 @@ function Header() {
               <SubParagraph className="main-page-filling-sub-following">
                 Сопровождение до завершения проверки декларации
               </SubParagraph>
-<FormCard text="Заполните заявку и мы свяжемся с Вами в ближайшее время!
-"/>
-      </Filling>
+            </FillingWrapper>
 
+            <FormCard
+              text="Заполните заявку и мы свяжемся с Вами в ближайшее время!"
+              style={{}}         
+            />
+          </Filling>
+        </Col>
+      </Row>
     </MainPage>
   );
 }
