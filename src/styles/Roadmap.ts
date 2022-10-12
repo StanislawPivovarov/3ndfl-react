@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const WorkWrapper = styled.div`
   padding: 60px 30px 15px 30px;
+  background-color: #F4F4F8;
 `;
 export const Circle = styled.div`
   height: 40px;
@@ -21,7 +22,7 @@ export const Number = styled.p`
   font-size: 24px;
   display: block;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-SemiBold", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -32,7 +33,7 @@ export const Number = styled.p`
 `;
 export const Description = styled.p`
   padding-bottom: 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-SemiBold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -42,7 +43,7 @@ export const Description = styled.p`
 `;
 export const Subdescription = styled.p`
   padding-bottom: 50px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -61,5 +62,6 @@ export const Header = styled.h1`
   font-size: 36px;
   line-height: 44px;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 65px;
+  font-family: "Montserrat-SemiBold"
 `;

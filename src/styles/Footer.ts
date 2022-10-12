@@ -14,6 +14,7 @@ flex-direction: column;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
 }
 `
 export const Logo = styled.img`
@@ -26,8 +27,10 @@ padding-bottom: 30px;
 font-weight: 400;
 font-size: 14px;
 line-height: 19px;
+font-family: "OpenSans-Regular"
 text-decoration: none;
 color: #fff;
+
 `
 
 export const Divider = styled.hr`
@@ -43,4 +46,6 @@ line-height: 19px;
 margin-bottom: 60px;
 color: #fff;
 text-transform: uppercase;
+padding-top: 28px;
+font-family: "OpenSans-Regular"
 `

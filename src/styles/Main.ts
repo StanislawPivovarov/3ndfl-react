@@ -37,6 +37,7 @@ font-size: 24px;
 line-height: 29px;
 text-align: center;
 padding-top: 45px;
+font-family: "Montserrat-SemiBold";
 @media(min-width: 992px){
     text-align: left;
 }
@@ -44,6 +45,7 @@ padding-top: 45px;
 
 export const UlList = styled.ul`
 list-style-type: none;
+padding-left: 0px;
 `
 
 export const ListElement = styled.li`
@@ -51,6 +53,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 22px;
 padding-bottom: 15px;
+font-family: "OpenSans-Regular";
 `
 export const TextWrapper = styled.div`
 width: 100%;

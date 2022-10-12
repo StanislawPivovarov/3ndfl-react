@@ -7,9 +7,13 @@ import
     PurposeSubtitle,
     PurposeSubdescription,
     PurposePrice,
-    Hilight
+    Hilight,
+    ButtonWrap,
+    WAicon,
+    ButtonText
 } from "../../styles/Cards"
 import {Button} from "antd";
+import wapp from "../../assets/images/main-page/wa.svg"
 
 interface PurposeProps{
     imageUrl: string;
@@ -36,7 +40,12 @@ function Purpose(props: PurposeProps){
             >ЗАКАЗАТЬ</Button>
             <Button type="default"
             style={{ width: "100%", marginBottom: "16px", backgroundColor:'none', border: "1px solid black", color:"black"}}
-            >WhatsApp</Button>
+            >
+                <ButtonWrap>
+      <WAicon src={wapp} alt="" className="whatsapp" />
+      <ButtonText className="text-us">Написать в WhatsApp</ButtonText>
+      </ButtonWrap>
+            </Button>
         </PurposeWrapper>
     );
 }

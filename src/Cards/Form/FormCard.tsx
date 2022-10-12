@@ -1,6 +1,7 @@
 import React from "react";
 import {Button, Checkbox, Form, Input, Select} from "antd";
-import {FormsCard, WrapperCard} from "../../styles/Cards"
+import {FormsCard, WAicon, WrapperCard, ButtonWrap, ButtonText} from "../../styles/Cards";
+import wapp from "../../assets/images/main-page/wa.svg"
 const { Option } = Select;
 
 interface propsText {
@@ -54,7 +55,10 @@ function FormCard(props:propsText){
       <div className="form-whatsapp">
         <p className="whatsapp-txt">Напите нам в WhatsApp</p>
         <Button type="default" style={{ width: "100%", marginTop: "16px", backgroundColor:'none', border: "1px solid black", color:"black"}}>
-      тут кнопка с логотипом ватсапа
+      <ButtonWrap>
+      <WAicon src={wapp} alt="" className="whatsapp" />
+      <ButtonText className="text-us">Написать в WhatsApp</ButtonText>
+      </ButtonWrap>
         </Button>
       </div>
     </Form>

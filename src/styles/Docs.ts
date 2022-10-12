@@ -9,4 +9,5 @@ export const Header = styled.p`
   font-size: 36px;
   line-height: 44px;
   text-align: center;
+  font-family: "Montserrat-SemiBold"
 `;

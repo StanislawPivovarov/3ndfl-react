@@ -7,9 +7,11 @@ import Docs from './components/DocList';
 import Form from './components/Form'
 import Map from './components/Map';
 import Footer from './components/Footer';
+import GlobalFonts from "./__fonts/fonts"
 function App() {
   return (
       <div className="App">
+        <GlobalFonts/>
       <Header/>
       <Main/>
       <Work/>

@@ -53,7 +53,7 @@ export const PhoneNumber = styled.a`
   text-decoration: none;
   margin-left: 12px;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat-Bold';
   font-weight: 600;
   font-size: 21px;
   line-height: 26px;
@@ -73,7 +73,7 @@ padding: 0px 16px 0px 16px;
 `
 export const WaText = styled.p`
 color: #fff;
-font-family: "Montserrat", sans-serif;
+font-family: "Montserrat-Regular", sans-serif;
 font-weight: 400;
 margin: 8px 0px 8px 9px;
 font-size: 16px;
@@ -93,7 +93,7 @@ margin-left: auto;
 
 export const HeaderParagraph = styled.p`
 color: #fff;
-font-family: "Montserrat", sans-serif;
+font-family: "Montserrat-Bold", sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 36px;
@@ -104,7 +104,7 @@ line-height: 60px;
 `
 export const SubParagraph = styled.p`
 color: #fff;
-font-family: "Montserrat", sans-serif;
+font-family: "Montserrat-SemiBold", sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
@@ -116,11 +116,14 @@ line-height: 22px;
 
 export const Filling = styled.div`
 display: flex;
+margin-left:auto;
+margin-right: auto;
 flex-direction: column;
 padding: 36px 0px 64px 0px;
 @media(min-width: 992px){
   flex-direction: row;
   justify-content: space-between;
+  width: 90%;
 }
 `
 
