@@ -1,7 +1,25 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+display: flex;
+flex-direction: column;
+@media(min-width: 992px){
+  flex-direction: row-reverse;
+}
+`
+
 export const AdressWrapper = styled.div`
-  padding: 64px 16px 32px 16px;
+margin: 64px 70px 43px 16px;
+  background: #fff;
+  @media(min-width: 786px){
+    padding: 64px 65px 32px 43px;
+  }
+  @media(min-width: 992px){
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ContactInfo = styled.h1`
@@ -51,5 +69,5 @@ margin-bottom: 37px;
 
 export const MapWrapper = styled.div`
 width: 100%;
-height: 300px;
+
 `

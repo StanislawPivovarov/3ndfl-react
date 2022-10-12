@@ -76,7 +76,7 @@ function Header() {
 
             <FormCard
               text="Заполните заявку и мы свяжемся с Вами в ближайшее время!"
-              style={{}}         
+              style={{padding: 0}}         
             />
           </Filling>
         </Col>

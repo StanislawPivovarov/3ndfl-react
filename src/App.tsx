@@ -6,6 +6,7 @@ import Work from './components/Work';
 import Docs from './components/DocList';
 import Form from './components/Form'
 import Map from './components/Map';
+import Footer from './components/Footer';
 function App() {
   return (
       <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Docs/>
       <Form/>
       <Map/>
+      <Footer/>
     </div>
 
    

@@ -11,6 +11,7 @@ import {
   LinkWrapper,
   MailLink,
   MapWrapper,
+  Wrapper,
 } from "../../styles/Map";
 
 import { Col, Row } from "antd";
@@ -19,7 +20,7 @@ import insta from "../../assets/images/instagram.svg";
 import MyPlacemark from "../YandexMap";
 function Map() {
   return (
-    <div>
+    <Wrapper>
       <AdressWrapper>
         <ContactInfo className="contact-info">
           Контактная информация
@@ -61,7 +62,7 @@ function Map() {
       <MapWrapper>
         <MyPlacemark />
       </MapWrapper>
-    </div>
+    </Wrapper>
   );
 }
 
