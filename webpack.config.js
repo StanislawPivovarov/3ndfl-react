@@ -2,12 +2,16 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: "./src/index.tsx",
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].[hash].ts",
+  mode: "development",
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    compress: true,
+    port: 3001,
   },
+
   module: {
     rules: [
       {
@@ -20,36 +24,50 @@ module.exports = {
         },
       },
       {
-        test: /\.less$/,
-        use: [
-          {
-            loader: "style-loader",
-          },
-          {
-            loader: "css-loader", // translates CSS into CommonJS
-          },
-          {
-            loader: "less-loader",
-            options: {
-              lessOptions: {
-                // If you are using less-loader@5 please spread the lessOptions to options directly
-                modifyVars: {
-                  "primary-color": "#1DA57A",
-                  "link-color": "#1DA57A",
-                  "border-radius-base": "2px",
-                },
-                javascriptEnabled: true,
-              },
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "ts-loader",
+          options: {
+            compilerOptions: {
+              noEmit: false,
             },
           },
-        ],
+        },
+      },
+      {
+        test: /\.(svg|png|gif|jpg)$/,
+        exclude: /fonts/,
+        use: {
+            loader: "file-loader",
+        },
+        
+      },
+      {
+        test: /\.(ttf|eot|woff|svg|woff2)$/,
+        loader: "file-loader",
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
-
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: path.join(__dirname, "src", "index.html"),
-      }),
-    ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "public", "index.html"),
+    }),
+  ],
+  output: {
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist"),
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
   },
 };
