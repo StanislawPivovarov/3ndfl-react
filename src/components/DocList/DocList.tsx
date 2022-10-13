@@ -14,36 +14,44 @@ function Docs() {
             <Panel
               header="Необходимые документы при имущественном вычете при покупке квартиры"
               key="1"
+              style={{fontSize: '24px'}}
             >
               <p>{text}</p>
             </Panel>
             <Panel
               header="Необходимые документы при продаже квартиры/дома/дачи/автомобиля/гаража?"
               key="2"
+              style={{fontSize: '24px'}}
             >
               <p>{text}</p>
             </Panel>
             <Panel
               header="Необходимые документы при сдаче имущества в аренду"
               key="3"
+              style={{fontSize: '24px'}}
             >
               <p>{text}</p>
             </Panel>
-            <Panel header="Необходимые документы на вычет за лечение" key="4">
+            <Panel header="Необходимые документы на вычет за лечение"
+            key="4"
+            style={{fontSize: '24px'}}>
               <p>{text}</p>
             </Panel>
-            <Panel header="Необходимые документы на вычет за обучение" key="5">
+            <Panel header="Необходимые документы на вычет за обучение" key="5"
+            style={{fontSize: '24px'}}>
               <p>{text}</p>
             </Panel>
             <Panel
               header="Необходимые документы на вычет за оплату страхования жизни"
               key="6"
+              style={{fontSize: '24px'}}
             >
               <p>{text}</p>
             </Panel>
             <Panel
               header="Необходимые документы на вычет за инвестиционный счет"
               key="7"
+              style={{fontSize: '24px'}}
             >
               <p>{text}</p>
             </Panel>

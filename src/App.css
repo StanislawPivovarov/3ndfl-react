@@ -1,5 +1,0 @@
-@import url('/node_modules/antd/dist/antd.min.css');
-
-.ant-collapse>.ant-collapse-item>.ant-collapse-header{
-    flex-direction: row-reverse;
-}

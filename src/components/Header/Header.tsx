@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/main-page/logo.svg";
 import tel from "../../assets/images/main-page/phone.svg";
-import wa from "../../assets/images/main-page/wa.svg";
+import wa from "../../assets/images/main-page/wawhite.svg";
 import {
   Logotype,
   MainPage,

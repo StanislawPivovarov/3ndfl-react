@@ -79,3 +79,12 @@ export const ButtonText = styled.p`
 margin-bottom: 0;
 padding-left: 8px;
 `
+export const HeaderP = styled.p`
+font-family: OpenSans-Regular;
+font-size: 18px;
+`
+
+export const InputHeader = styled.p`
+font-family: OpenSans-Regular;
+font-size: 14px;
+`

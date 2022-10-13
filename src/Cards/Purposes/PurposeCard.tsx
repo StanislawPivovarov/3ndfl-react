@@ -36,10 +36,10 @@ function Purpose(props: PurposeProps){
                 </Hilight>
                 </PurposePrice>
             <Button type="primary"
-            style={{ width: "100%", marginBottom: "16px", backgroundColor:'black', border: "1px solid black", color:"white"}}
+            style={{ width: "100%", marginBottom: "16px", border: "1px solid black"}}
             >ЗАКАЗАТЬ</Button>
             <Button type="default"
-            style={{ width: "100%", marginBottom: "16px", backgroundColor:'none', border: "1px solid black", color:"black"}}
+            style={{ width: "100%", marginBottom: "16px", border: "1px solid black"}}
             >
                 <ButtonWrap>
       <WAicon src={wapp} alt="" className="whatsapp" />

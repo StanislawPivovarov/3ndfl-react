@@ -35,17 +35,48 @@ module.exports = {
           },
         },
       },
+
       {
-        test: /\.(svg|png|gif|jpg)$/,
-        exclude: /fonts/,
+        test: /\.svg$/i,
+        include: [__dirname + "/src"],
+        use: ["file-loader"],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
         use: {
-            loader: "file-loader",
+          loader: "file-loader",
         },
-        
       },
       {
         test: /\.(ttf|eot|woff|svg|woff2)$/,
         loader: "file-loader",
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "less-loader",
+            options: {
+              lessOptions: {
+                modifyVars: {
+                  "primary-color": "#000",
+                  "btn-default-bg": "#fff",
+                  "btn-height-base": "40px",
+                  "input-height-base": "40px",
+                  "link-hover-color": "#fff"
+                  
+                },
+                javascriptEnabled: true,
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.css$/i,
