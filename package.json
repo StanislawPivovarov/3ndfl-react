@@ -1,6 +1,7 @@
 {
   "name": "3ndfl-react",
   "version": "0.1.0",
+  "homepage": "https://StanislawPivovarov.github.io/3ndfl-react",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -20,6 +21,7 @@
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "http-proxy-middleware": "^2.0.6",
     "less": "^4.1.3",
@@ -43,6 +45,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
+    "predeploy": "webpack --mode production",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --open",
     "build": "webpack --mode production",
     "test": "react-scripts test",

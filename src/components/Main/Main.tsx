@@ -72,7 +72,7 @@ function Main() {
                 <ListElement>Вы не платите госпошлину 800 ₽</ListElement>
                 <ListElement>Вам не нужно ходить в налоговую</ListElement>
               </UlList>
-              <Button style={{width: "100%"}}>Оставить заявку</Button>
+              <Button type="primary" style={{width: "100%"}}>Оставить заявку</Button>
             </TextWrapper>
           </RegisterIp>
         </>
