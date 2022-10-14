@@ -69,6 +69,7 @@ font-family: "OpenSans-Regular";
 font-weight: 400;
 font-size: 14px;
 line-height: 19px;
+color: #0000FF
 `
 export const LinkWrapper = styled.div`
 margin-bottom: 37px;
