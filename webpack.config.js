@@ -69,8 +69,10 @@ module.exports = {
                   "btn-default-bg": "#fff",
                   "btn-height-base": "40px",
                   "input-height-base": "40px",
-                  "link-hover-color": "#fff"
-                  
+                  "link-hover-color": "#fff",
+                  "dropdown-selected-color": "#fff",
+                  "primary-1": "#fff",
+                  "link-active-color": "#fff"
                 },
                 javascriptEnabled: true,
               },
