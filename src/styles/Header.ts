@@ -11,7 +11,13 @@ export const MainPage = styled.div`
   background-size: cover;
   background-color: #000;
   @media(min-width: 992px){
+    height: max-content;
+  }
+  @media(min-width: 1200px){
     height: 100vh
+  }
+  @media(max-height: 800px){
+    height: max-content
   }
   `;
 
@@ -29,8 +35,9 @@ export const Logotype = styled.img`
   padding: 20px 16px 16px;
   width: 229px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+@media(max-width: 992px){
+  margin: 0 auto;
+}
 `;
 
 export const MainPagePhone = styled.div`
@@ -53,7 +60,7 @@ export const PhoneNumber = styled.a`
   text-decoration: none;
   margin-left: 12px;
   color: #fff;
-  font-family: 'Montserrat-Bold';
+  font-family: 'Montserrat-Semibold';
   font-weight: 600;
   font-size: 21px;
   line-height: 26px;
@@ -87,13 +94,14 @@ export const ButtonPosition = styled.div`
 display: flex;
 width: max-content;
 height: max-content;
-margin-right: auto;
-margin-left: auto;
+@media(max-width: 992px){
+  margin: 0 auto;
+}
 `
 
 export const HeaderParagraph = styled.p`
 color: #fff;
-font-family: "Montserrat-Bold", sans-serif;
+font-family: "Montserrat-Sebmibold", sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 36px;
@@ -123,7 +131,14 @@ padding: 36px 0px 64px 0px;
 @media(min-width: 992px){
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
+  margin-top: 93px;
+}
+@media(min-width: 1200px){
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 105px;
 }
 `
 

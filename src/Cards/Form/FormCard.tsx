@@ -7,6 +7,7 @@ const { Option } = Select;
 interface propsText {
   text: string;
   style: React.CSSProperties;
+  wa: React.CSSProperties;
 }
 
 function FormCard(props:propsText){
@@ -52,7 +53,7 @@ function FormCard(props:propsText){
           ЗАКАЗАТЬ
         </Button>
       </Form.Item>
-      <div className="form-whatsapp">
+      <div className="form-whatsapp" style={props.wa}>
         <p className="whatsapp-txt">Напите нам в WhatsApp</p>
         <Button type="default" style={{ width: "100%", marginTop: "16px", border: "1px solid black"}}>
       <ButtonWrap>

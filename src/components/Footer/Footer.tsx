@@ -1,11 +1,13 @@
 import { Col, Row } from "antd";
 import React from "react";
+import { Baseline } from "../../styles/Main";
 import logo from "../../assets/images/main-page/logo.svg";
 import { FooterWrapper, Logo, Copyright, TextWrapper, Divider, Link } from "../../styles/Footer";
 function Footer() {
   return (
     <FooterWrapper>
-        <Row justify="center">
+      <Baseline>
+      <Row justify="center">
         <Col xs={23} md={22} lg={20} xl={19}>
       <TextWrapper className="">
         <Logo src={logo} alt="logo" className="logo" />
@@ -20,6 +22,8 @@ function Footer() {
       <Copyright className="copyright">© 2022, Центр Отчетности </Copyright>
       </Col>
       </Row>
+      </Baseline>
+        
     </FooterWrapper>
   );
 }

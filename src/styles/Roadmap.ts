@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import Background from "../assets/images/background2.png"
 
 export const WorkWrapper = styled.div`
   padding: 60px 30px 15px 30px;
   background-color: #F4F4F8;
+  background-image: url(${Background});
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: inherit;
 `;
 export const Circle = styled.div`
   height: 40px;

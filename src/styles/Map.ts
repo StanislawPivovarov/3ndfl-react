@@ -11,6 +11,8 @@ flex-direction: column;
 export const AdressWrapper = styled.div`
 margin: 64px 70px 43px 16px;
   background: #fff;
+  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+
   @media(min-width: 786px){
     padding: 64px 65px 32px 43px;
   }
@@ -69,7 +71,10 @@ font-family: "OpenSans-Regular";
 font-weight: 400;
 font-size: 14px;
 line-height: 19px;
-color: #0000FF
+color: #0000FF;
+&:hover{
+  color: #0000FF;
+}
 `
 export const LinkWrapper = styled.div`
 margin-bottom: 37px;

@@ -14,7 +14,7 @@ return(
       apikey: '9440f975-6e8c-4e36-9e6f-2dcdfb5b50bf',
     }}
     >
-    <Map state={mapState} width="100%" height="100%" >
+    <Map state={mapState} width="100%" height="100%">
 
       <Placemark geometry={[55.758266, 37.626502]}/>
          <ZoomControl />

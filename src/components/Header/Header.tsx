@@ -21,12 +21,14 @@ import {
 } from "../../styles/Header";
 import FormCard from "../../Cards/Form";
 import { Button, Col, Row } from "antd";
+import { Baseline } from "../../styles/Main";
 
 function Header() {
   return (
     <MainPage className="main-page">
+      <Baseline>
       <Row justify="center">
-        <Col xs={23} md={22} lg={20} xl={19}>
+        <Col xs={23} md={22} lg={20} xl={24}>
           <MainPageHeader className="main-page-header">
             <Logotype src={logo} className="main-page-logo" alt="logo" />
             <MainPagePhone className="main-page-phone">
@@ -38,9 +40,9 @@ function Header() {
                 />
                 <PhoneNumber
                   className="main-page-phone-num"
-                  href="tel: +7800000000"
+                  href="tel: +7 800 000 00 00"
                 >
-                  +7800000000
+                  +7 800 000 00 00
                 </PhoneNumber>
               </MainPagePhoneWrapper>
             </MainPagePhone>
@@ -76,11 +78,14 @@ function Header() {
 
             <FormCard
               text="Заполните заявку и мы свяжемся с Вами в ближайшее время!"
-              style={{padding: 0}}         
+              style={{padding: 0}}   
+              wa={{display: 'none'}}      
             />
           </Filling>
         </Col>
       </Row>
+      </Baseline>
+      
     </MainPage>
   );
 }

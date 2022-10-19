@@ -10,7 +10,8 @@ import
     Hilight,
     ButtonWrap,
     WAicon,
-    ButtonText
+    ButtonText,
+    ButtonAlign
 } from "../../styles/Cards"
 import {Button} from "antd";
 import wapp from "../../assets/images/main-page/wa.svg"
@@ -30,11 +31,14 @@ function Purpose(props: PurposeProps){
             <PurposeDescription>{props.description}</PurposeDescription>
             <PurposeSubtitle>{props.subtitle}</PurposeSubtitle>
             <PurposeSubdescription>{props.subdescription}</PurposeSubdescription>
+            <ButtonAlign>
             <PurposePrice>
+
                 <Hilight>
                     {props.price}
                 </Hilight>
                 </PurposePrice>
+            
             <Button type="primary"
             style={{ width: "100%", marginBottom: "16px", border: "1px solid black"}}
             >ЗАКАЗАТЬ</Button>
@@ -46,6 +50,8 @@ function Purpose(props: PurposeProps){
       <ButtonText className="text-us">Написать в WhatsApp</ButtonText>
       </ButtonWrap>
             </Button>
+            </ButtonAlign>
+
         </PurposeWrapper>
     );
 }

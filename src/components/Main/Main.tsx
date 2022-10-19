@@ -6,15 +6,15 @@ import medical from "../../assets/images/purpose/med.svg";
 import income from "../../assets/images/purpose/additional-income.svg";
 import insurance from "../../assets/images/purpose/insurance.svg";
 import invest from "../../assets/images/purpose/investitions.svg";
-import { Header, Img, ListElement, RegisterIp, TextWrapper, UlList, Wrapper } from "../../styles/Main";
+import { Baseline, Header, Img, ListElement, RegisterIp, TextWrapper, UlList, Wrapper, Bold } from "../../styles/Main";
 import ip from "../../assets/images/purpose/ip-ooo.svg";
 import { Button, Col, Row } from "antd";
 function Main() {
   return (
     <Row justify="center">
-      <Col xs={23} md={22} lg={20} xl={19}>
-        <>
-          <Wrapper>
+      <Col xs={23} md={22} lg={20} xl={24}>
+        <Baseline>
+        <Wrapper>
             <Purpose
               imageUrl={house}
               description="КУПИЛИ НЕДВИЖИМОСТЬ"
@@ -75,7 +75,8 @@ function Main() {
               <Button type="primary" style={{width: "100%"}}>Оставить заявку</Button>
             </TextWrapper>
           </RegisterIp>
-        </>
+        </Baseline>
+          
       </Col>
     </Row>
   );

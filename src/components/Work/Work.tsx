@@ -1,12 +1,14 @@
 import { Row, Col } from "antd";
 import React from "react";
+import { Baseline } from "../../styles/Main";
 import RoadMapItems from "../../Cards/Form/Roadmap";
 import { WorkWrapper, Header } from "../../styles/Roadmap";
 function Work() {
   return (
     <WorkWrapper>
+      <Baseline>
       <Row justify="center">
-        <Col xs={23} md={22} lg={20} xl={19}>
+        <Col xs={23} md={22} lg={20} xl={24}>
           <Header>Как мы работаем</Header>
           <RoadMapItems
             number={1}
@@ -40,6 +42,8 @@ function Work() {
           />
         </Col>
       </Row>
+      </Baseline>
+      
     </WorkWrapper>
   );
 }

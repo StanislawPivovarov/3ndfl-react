@@ -4,7 +4,12 @@ import styled from "styled-components";
 
 export const WrapperCard = styled.div`
   background-color: #fff;
-  padding: 16px 16px 24px 16px;
+  padding: 30px 30px 54px 30px;
+  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+
+  @media(max-width: 768px){
+    padding: 16px 16px 24px 16px;
+  }
 `;
 
 export const PurposeWrapper = styled.div`
@@ -53,8 +58,8 @@ export const Hilight = styled.mark`
   font-family: "OpenSans-Bold", sans-serif;
 `;
 export const FormsCard = styled.div`
-width: 100%;
 z-index: 10;
+
 display: block;
 @media(min-width: 992px){
   width: 480px;
@@ -87,4 +92,8 @@ font-size: 18px;
 export const InputHeader = styled.p`
 font-family: OpenSans-Regular;
 font-size: 14px;
+`
+
+export const ButtonAlign = styled.div`
+
 `

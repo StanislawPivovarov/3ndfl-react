@@ -58,3 +58,14 @@ font-family: "OpenSans-Regular";
 export const TextWrapper = styled.div`
 width: 100%;
 `
+export const Baseline = styled.div`
+display: block;
+margin: 0 auto 0 auto;
+@media(min-width: 1200px){
+    width: 1140px;
+}
+`
+
+export const Bold = styled.span`
+font-weight: bold;
+`
