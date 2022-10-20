@@ -1,13 +1,20 @@
 import styled from "styled-components";
-import Background from "../assets/images/background2.png"
+import Background from "../assets/images/background.png"
 
 export const WorkWrapper = styled.div`
   padding: 60px 30px 15px 30px;
   background-color: #F4F4F8;
   background-image: url(${Background});
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: inherit;
+
+  background-repeat: repeat-y;
+  @media(min-width: 320px){
+    background-position: calc(100vw - 180px);
+  }
+  @media(min-width: 1200px){
+    background-position:calc(100vw - 340px)
+    ;
+  }
+
 `;
 export const Circle = styled.div`
   height: 40px;
@@ -45,6 +52,7 @@ export const Description = styled.p`
   line-height: 29px;
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 `;
 export const Subdescription = styled.p`
   padding-bottom: 50px;
@@ -70,3 +78,7 @@ export const Header = styled.h1`
   margin-bottom: 65px;
   font-family: "Montserrat-SemiBold"
 `;
+export const TextFilling = styled.p`
+font-weight: normal;
+font-size: 18px;
+`
