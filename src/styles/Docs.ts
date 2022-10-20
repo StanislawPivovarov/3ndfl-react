@@ -23,3 +23,8 @@ export const Header = styled.p`
   }
 
 `;
+export const TextFilling = styled.p`
+font-weight: normal;
+font-size: 18px;
+font-family: "Montserrat-regular"
+`

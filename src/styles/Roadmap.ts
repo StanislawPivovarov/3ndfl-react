@@ -61,6 +61,7 @@ export const Subdescription = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  margin-bottom: 0;
 `;
 export const Line = styled.div`
   height: 100%;
@@ -78,7 +79,3 @@ export const Header = styled.h1`
   margin-bottom: 65px;
   font-family: "Montserrat-SemiBold"
 `;
-export const TextFilling = styled.p`
-font-weight: normal;
-font-size: 18px;
-`
