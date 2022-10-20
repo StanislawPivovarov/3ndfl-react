@@ -11,7 +11,6 @@ flex-direction: column;
 export const AdressWrapper = styled.div`
 margin: 64px 70px 43px 16px;
   background: #fff;
-  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
 
   @media(min-width: 786px){
     padding: 64px 65px 32px 43px;
@@ -21,6 +20,9 @@ margin: 64px 70px 43px 16px;
     z-index: 10;
     display: flex;
     flex-direction: column;
+  }
+  @media(max-wisth: 768px){
+    box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
   }
 `;
 

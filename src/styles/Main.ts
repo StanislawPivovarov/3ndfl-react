@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
 display: grid;
 grid-template-columns: 100%;
 justify-content: space-between;
-grid-gap: 60px;
 @media(min-width: 768px){
     grid-template-columns: 45% 45%;
 }

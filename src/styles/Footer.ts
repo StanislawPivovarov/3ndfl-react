@@ -49,3 +49,10 @@ text-transform: uppercase;
 padding-top: 28px;
 font-family: "OpenSans-Regular"
 `
+export const BaselineFooter = styled.div`
+width: 100%;
+margin: 0 auto;
+@media(min-width: 768px){
+    max-width: 1140px;
+}
+`
