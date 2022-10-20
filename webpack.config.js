@@ -65,14 +65,17 @@ module.exports = {
             options: {
               lessOptions: {
                 modifyVars: {
-                  "primary-color": "#000",
+                  "primary-color": "#262626",
                   "btn-default-bg": "#fff",
                   "btn-height-base": "40px",
                   "input-height-base": "40px",
                   "link-hover-color": "#fff",
                   "dropdown-selected-color": "#fff",
                   "primary-1": "#fff",
-                  "link-active-color": "#fff"
+                  "link-active-color": "#fff",
+                  "primary-color-hover": "#363636",
+                  "primary-color-active": "#1F1F1F",
+                  "btn-default-border": "#9FD7E8"
                 },
                 javascriptEnabled: true,
               },

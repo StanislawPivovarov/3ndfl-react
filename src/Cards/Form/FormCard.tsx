@@ -55,7 +55,7 @@ function FormCard(props:propsText){
       </Form.Item>
       <div className="form-whatsapp" style={props.wa}>
         <p className="whatsapp-txt">Напите нам в WhatsApp</p>
-        <Button type="default" style={{ width: "100%", marginTop: "16px", border: "1px solid black"}}>
+        <Button className="button-whatsapp" type="default" style={{ width: "100%", marginTop: "16px",}}>
       <ButtonWrap>
       <WAicon src={wapp} alt="" className="whatsapp" />
       <ButtonText className="text-us">Написать в WhatsApp</ButtonText>

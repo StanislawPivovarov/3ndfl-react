@@ -67,7 +67,7 @@ export const PhoneNumber = styled.a`
   text-align: center;
   text-transform: uppercase;
 `;
-export const WhatsAppIcon = styled.img`
+export const WhatsAppIcon = styled.svg`
   width: 21px;
   height: 21px;
 `;
@@ -79,7 +79,6 @@ padding: 0px 16px 0px 16px;
 
 `
 export const WaText = styled.p`
-color: #fff;
 font-family: "Montserrat-Regular", sans-serif;
 font-weight: 400;
 margin: 8px 0px 8px 9px;
