@@ -12,7 +12,7 @@ export const WorkWrapper = styled.div`
     padding: 60px 16px 16px 16px;
   }
   @media(min-width: 1200px){
-    background-position:calc(100vw - 340px)
+    background-position:calc(100vw - 25%);
     padding: 60px 30px 15px 30px;
     ;
   }
