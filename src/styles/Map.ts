@@ -73,9 +73,9 @@ font-family: "OpenSans-Regular";
 font-weight: 400;
 font-size: 14px;
 line-height: 19px;
-color: #0000FF;
+color: #11B7E9;
 &:hover{
-  color: #0000FF;
+  color: #11B7E9;
 }
 `
 export const LinkWrapper = styled.div`
