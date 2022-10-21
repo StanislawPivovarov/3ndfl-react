@@ -20,7 +20,7 @@ interface PurposeProps{
     imageUrl: string;
     description: string;
     subtitle: string;
-    subdescription: string;
+    subdescription: object;
     price: string;
 }
 
