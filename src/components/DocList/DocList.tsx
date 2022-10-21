@@ -5,59 +5,134 @@ import { Baseline } from "../../styles/Main";
 import file from "../../assets/images/paper.svg"
 import { TextFilling } from "../../styles/Docs";
 const { Panel } = Collapse;
-const text =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum nisl ut scelerisque ultrices. Quisque nec consequat odio, eu interdum elit. Suspendisse sodales sagittis urna. Fusce non nisi dapibus, convallis arcu eget, suscipit elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In molestie quam et sem dignissim, porta placerat lectus ultricies. Aliquam accumsan tortor sed tempus auctor. Quisque eget justo in arcu efficitur efficitur. Vivamus tristique dapibus lacus quis rhoncus. Donec posuere vel enim vitae tempor. Sed id sapien porttitor, congue orci nec, varius elit. Pellentesque ac risus tortor. Suspendisse in nunc sit amet turpis euismod placerat. Integer imperdiet ut metus quis sodales. Curabitur sit amet sapien enim.";
 function Docs() {
   return (
 <AccordionWrapper>
       <Baseline>
-      <Row justify="end">
+      <Row justify="center">
         <Col xs={24} md={22} lg={20} xl={24}>
           <Header className="list-docs">Список необходимых документов</Header>
-          <Collapse accordion>
+          <Collapse accordion className="accordion">
             <Panel
               header="Необходимые документы при имущественном вычете при покупке квартиры"
               key="1"
               style={{fontSize: '24px', fontFamily:"Montserrat-Semibold"}}
             >
-              <TextFilling>{text}</TextFilling>
+              <TextFilling>
+                <ul>
+                  <li>декларация о налогах на доходы физлиц по форме 3-НДФЛ (бланк можно взять в налоговой или на ее сайте)</li>
+                  <li>справка от доходах по форме 2-НДФЛ (получить у работодателя)</li>
+                  <li>договор купли-продажи жилья</li>
+                  <li>свидетельство о праве собственности (или выписка из ЕГРН)</li>
+                  <li>акт приема-передачи квартиры налогоплательщику (или доли в ней)</li>
+                  <li>документы, подтверждающие расходы на покупку имущества (банковские выписки, расписка от продавца о получении денег)</li>
+                  <li>паспорт</li>
+                  <li>свидетельство о заключении брака (если квартира приобретена в браке)</li>
+                </ul>
+                </TextFilling>
             </Panel>
             <Panel
               header="Необходимые документы при продаже квартиры/дома/дачи/автомобиля/гаража?"
               key="2"
               style={{fontSize: '24px', fontFamily:"Montserrat-Semibold"}}
             >
-              <TextFilling>{text}</TextFilling>
+              <TextFilling>
+              <ul>
+                  <li>декларация о налогах на доходы физлиц по форме 3-НДФЛ (бланк можно взять в налоговой или на ее сайте)</li>
+                  <li>справка от доходах по форме 2-НДФЛ (получить у работодателя)</li>
+                  <li>договор купли-продажи жилья</li>
+                  <li>свидетельство о праве собственности (или выписка из ЕГРН)</li>
+                  <li>акт приема-передачи квартиры налогоплательщику (или доли в ней)</li>
+                  <li>документы, подтверждающие расходы на покупку имущества (банковские выписки, расписка от продавца о получении денег)</li>
+                  <li>паспорт</li>
+                  <li>свидетельство о заключении брака (если квартира приобретена в браке)</li>
+                </ul>
+                </TextFilling>
             </Panel>
             <Panel
               header="Необходимые документы при сдаче имущества в аренду"
               key="3"
               style={{fontSize: '24px', fontFamily:"Montserrat-Semibold"}}
             >
-              <TextFilling>{text}</TextFilling>
+              <TextFilling>
+              <ul>
+                  <li>декларация о налогах на доходы физлиц по форме 3-НДФЛ (бланк можно взять в налоговой или на ее сайте)</li>
+                  <li>справка от доходах по форме 2-НДФЛ (получить у работодателя)</li>
+                  <li>договор купли-продажи жилья</li>
+                  <li>свидетельство о праве собственности (или выписка из ЕГРН)</li>
+                  <li>акт приема-передачи квартиры налогоплательщику (или доли в ней)</li>
+                  <li>документы, подтверждающие расходы на покупку имущества (банковские выписки, расписка от продавца о получении денег)</li>
+                  <li>паспорт</li>
+                  <li>свидетельство о заключении брака (если квартира приобретена в браке)</li>
+                </ul>
+              </TextFilling>
             </Panel>
             <Panel header="Необходимые документы на вычет за лечение"
             key="4"
             style={{fontSize: '24px', fontFamily:"Montserrat-Semibold"}}>
-              <TextFilling>{text}</TextFilling>
+              <TextFilling>
+              <ul>
+                  <li>декларация о налогах на доходы физлиц по форме 3-НДФЛ (бланк можно взять в налоговой или на ее сайте)</li>
+                  <li>справка от доходах по форме 2-НДФЛ (получить у работодателя)</li>
+                  <li>договор купли-продажи жилья</li>
+                  <li>свидетельство о праве собственности (или выписка из ЕГРН)</li>
+                  <li>акт приема-передачи квартиры налогоплательщику (или доли в ней)</li>
+                  <li>документы, подтверждающие расходы на покупку имущества (банковские выписки, расписка от продавца о получении денег)</li>
+                  <li>паспорт</li>
+                  <li>свидетельство о заключении брака (если квартира приобретена в браке)</li>
+                </ul>
+              </TextFilling>
             </Panel>
             <Panel header="Необходимые документы на вычет за обучение" key="5"
             style={{fontSize: '24px' , fontFamily:"Montserrat-Semibold"}}>
-              <TextFilling>{text}</TextFilling>
+              <TextFilling>
+              <ul>
+                  <li>декларация о налогах на доходы физлиц по форме 3-НДФЛ (бланк можно взять в налоговой или на ее сайте)</li>
+                  <li>справка от доходах по форме 2-НДФЛ (получить у работодателя)</li>
+                  <li>договор купли-продажи жилья</li>
+                  <li>свидетельство о праве собственности (или выписка из ЕГРН)</li>
+                  <li>акт приема-передачи квартиры налогоплательщику (или доли в ней)</li>
+                  <li>документы, подтверждающие расходы на покупку имущества (банковские выписки, расписка от продавца о получении денег)</li>
+                  <li>паспорт</li>
+                  <li>свидетельство о заключении брака (если квартира приобретена в браке)</li>
+                </ul>
+              </TextFilling>
             </Panel>
             <Panel
               header="Необходимые документы на вычет за оплату страхования жизни"
               key="6"
               style={{fontSize: '24px', fontFamily:"Montserrat-Semibold"}}
             >
-              <TextFilling>{text}</TextFilling>
+              <TextFilling>
+              <ul>
+                  <li>декларация о налогах на доходы физлиц по форме 3-НДФЛ (бланк можно взять в налоговой или на ее сайте)</li>
+                  <li>справка от доходах по форме 2-НДФЛ (получить у работодателя)</li>
+                  <li>договор купли-продажи жилья</li>
+                  <li>свидетельство о праве собственности (или выписка из ЕГРН)</li>
+                  <li>акт приема-передачи квартиры налогоплательщику (или доли в ней)</li>
+                  <li>документы, подтверждающие расходы на покупку имущества (банковские выписки, расписка от продавца о получении денег)</li>
+                  <li>паспорт</li>
+                  <li>свидетельство о заключении брака (если квартира приобретена в браке)</li>
+                </ul>
+              </TextFilling>
             </Panel>
             <Panel
               header="Необходимые документы на вычет за инвестиционный счет"
               key="7"
               style={{fontSize: '24px', fontFamily:"Montserrat-Semibold"}}
             >
-              <TextFilling>{text}</TextFilling>
+              <TextFilling>
+              <ul>
+                  <li>декларация о налогах на доходы физлиц по форме 3-НДФЛ (бланк можно взять в налоговой или на ее сайте)</li>
+                  <li>справка от доходах по форме 2-НДФЛ (получить у работодателя)</li>
+                  <li>договор купли-продажи</li>
+                  <li>свидетельство о праве собственности (или выписка из ЕГРН)</li>
+                  <li>акт приема-передачи квартиры налогоплательщику (или доли в ней)</li>
+                  <li>документы, подтверждающие расходы на покупку имущества (банковские выписки, расписка от продавца о получении денег)</li>
+                  <li>паспорт</li>
+                  <li>платежные документы или расписка о получении денег</li>
+                </ul>
+              </TextFilling>
             </Panel>
           </Collapse>
         </Col>

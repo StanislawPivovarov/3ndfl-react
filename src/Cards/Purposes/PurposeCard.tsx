@@ -42,6 +42,7 @@ function Purpose(props: PurposeProps){
             <Button type="primary"
             style={{ width: "100%", marginBottom: "16px"}}
             >ЗАКАЗАТЬ</Button>
+            <a href="https://wa.me/78000000000">
             <Button className="button-whatsapp" type="default"
             style={{ width: "100%", marginBottom: "16px"}}
             >
@@ -54,6 +55,8 @@ function Purpose(props: PurposeProps){
       <ButtonText className="text-us">Написать в WhatsApp</ButtonText>
       </ButtonWrap>
             </Button>
+    </a>
+            
             </ButtonAlign>
 
         </PurposeWrapper>

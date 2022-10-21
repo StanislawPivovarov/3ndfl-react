@@ -97,3 +97,7 @@ font-size: 14px;
 export const ButtonAlign = styled.div`
 
 `
+
+export const WhatsapParagraph = styled.p`
+margin-bottom: 0;
+`

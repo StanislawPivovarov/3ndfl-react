@@ -46,6 +46,7 @@ function Header() {
                 </PhoneNumber>
               </MainPagePhoneWrapper>
             </MainPagePhone>
+            <a href="https://wa.me/78000000000">
             <ButtonPosition className="button-wrap">
               <Button ghost>
                 <ButtonWrap className="button-wrapper">
@@ -59,6 +60,8 @@ function Header() {
                 </ButtonWrap>
               </Button>
             </ButtonPosition>
+            </a>
+            
           </MainPageHeader>
           <Filling className="main-page-filling">
             <FillingWrapper className="main-page-filling-wrapper">

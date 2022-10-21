@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Checkbox, Form, Input, Select} from "antd";
-import {FormsCard, WAicon, WrapperCard, ButtonWrap, ButtonText, HeaderP, InputHeader} from "../../styles/Cards";
+import {FormsCard, WAicon, WrapperCard, ButtonWrap, ButtonText, HeaderP, InputHeader, WhatsapParagraph} from "../../styles/Cards";
 import wapp from "../../assets/images/main-page/wa.svg"
 const { Option } = Select;
 
@@ -27,7 +27,7 @@ function FormCard(props:propsText){
         name="phone-num"
         rules={[
           {
-            required: true,
+            required: false,
             message: 'Введите Ваш номер',
           },
         ]}
@@ -54,7 +54,8 @@ function FormCard(props:propsText){
         </Button>
       </Form.Item>
       <div className="form-whatsapp" style={props.wa}>
-        <p className="whatsapp-txt">Напите нам в WhatsApp</p>
+        <WhatsapParagraph className="whatsapp-txt">Напите нам в WhatsApp</WhatsapParagraph>
+        <a href="https://wa.me/78000000000">
         <Button className="button-whatsapp" type="default" style={{ width: "100%", marginTop: "16px",}}>
       <ButtonWrap>
       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" style={{fill: "currentcolor"}}>
@@ -64,6 +65,8 @@ function FormCard(props:propsText){
       <ButtonText className="text-us">Написать в WhatsApp</ButtonText>
       </ButtonWrap>
         </Button>
+        </a>
+        
       </div>
     </Form>
 

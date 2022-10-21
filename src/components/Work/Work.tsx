@@ -8,7 +8,7 @@ function Work() {
     <WorkWrapper>
       <Baseline>
       <Row justify="center">
-        <Col xs={23} md={22} lg={20} xl={24}>
+        <Col xs={23} md={24} lg={24} xl={24}>
           <Header>Как мы работаем</Header>
           <RoadMapItems
             number={1}
