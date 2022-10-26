@@ -10,11 +10,11 @@ export const Image = styled.img`
   top: 20px;
   position: relative;
   margin: 0 auto 0 auto;
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     width: 523px;
     top: 52px;
   }
-  @media(min-width: 992px){
+  @media (min-width: 992px) {
     width: 701px;
     position: absolute;
     right: -42px;

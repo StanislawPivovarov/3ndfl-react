@@ -5,9 +5,10 @@ import styled from "styled-components";
 export const WrapperCard = styled.div`
   background-color: #fff;
   padding: 30px 30px 54px 30px;
-  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+    0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
 
-  @media(max-width: 768px){
+  @media (max-width: 768px) {
     padding: 16px 16px 24px 16px;
   }
 `;
@@ -58,46 +59,43 @@ export const Hilight = styled.mark`
   font-family: "OpenSans-Bold", sans-serif;
 `;
 export const FormsCard = styled.div`
-z-index: 10;
+  z-index: 10;
 
-display: block;
-@media(min-width: 992px){
-  width: 480px;
-  padding: 100px 0px 100px 0px;
-}
-`
+  display: block;
+  @media (min-width: 992px) {
+    width: 480px;
+    padding: 100px 0px 100px 0px;
+  }
+`;
 
 export const WAicon = styled.img`
-height: max-content
-`
+  height: max-content;
+`;
 export const ButtonWrap = styled.div`
-display: flex;
-flex-direction: row;
-margin-right: auto;
-margin-left: auto;
-width: max-content;
-align-items: center;
-
-`
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+  width: max-content;
+  align-items: center;
+`;
 
 export const ButtonText = styled.p`
-margin-bottom: 0;
-padding-left: 8px;
-`
+  margin-bottom: 0;
+  padding-left: 8px;
+`;
 export const HeaderP = styled.p`
-font-family: OpenSans-Regular;
-font-size: 18px;
-`
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+`;
 
 export const InputHeader = styled.p`
-font-family: OpenSans-Regular;
-font-size: 14px;
-`
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+`;
 
-export const ButtonAlign = styled.div`
-
-`
+export const ButtonAlign = styled.div``;
 
 export const WhatsapParagraph = styled.p`
-margin-bottom: 0;
-`
+  margin-bottom: 0;
+`;

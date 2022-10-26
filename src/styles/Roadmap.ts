@@ -1,23 +1,21 @@
 import styled from "styled-components";
-import Background from "../assets/images/background.png"
+import Background from "../assets/images/background.png";
 
 export const WorkWrapper = styled.div`
   padding: 60px 30px 15px 30px;
-  background-color: #F4F4F8;
+  background-color: #f4f4f8;
   background-image: url(${Background});
 
   background-repeat: repeat-y;
-  @media(min-width: 320px){
+  @media (min-width: 320px) {
     background-position: calc(100vw - 180px);
     padding: 60px 16px 16px 16px;
   }
-  
-  @media(min-width: 1200px){
-    background-position:calc(100vw - 25%);
-    padding: 60px 30px 15px 30px;
-    ;
-  }
 
+  @media (min-width: 1200px) {
+    background-position: calc(100vw - 25%);
+    padding: 60px 30px 15px 30px;
+  }
 `;
 export const Circle = styled.div`
   height: 40px;
@@ -80,5 +78,5 @@ export const Header = styled.h1`
   line-height: 44px;
   text-align: center;
   margin-bottom: 65px;
-  font-family: "Montserrat-SemiBold"
+  font-family: "Montserrat-SemiBold";
 `;

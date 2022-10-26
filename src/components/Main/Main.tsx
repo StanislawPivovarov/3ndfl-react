@@ -6,7 +6,16 @@ import medical from "../../assets/images/purpose/med.svg";
 import income from "../../assets/images/purpose/additional-income.svg";
 import insurance from "../../assets/images/purpose/insurance.svg";
 import invest from "../../assets/images/purpose/investitions.svg";
-import { Baseline, Header, Img, ListElement, RegisterIp, TextWrapper, UlList, Wrapper, Bold } from "../../styles/Main";
+import {
+  Baseline,
+  Header,
+  Img,
+  ListElement,
+  RegisterIp,
+  TextWrapper,
+  UlList,
+  Wrapper,
+} from "../../styles/Main";
 import ip from "../../assets/images/purpose/ip-ooo.svg";
 import { Button, Col, Row } from "antd";
 function Main() {
@@ -14,12 +23,14 @@ function Main() {
     <Row justify="center">
       <Col xs={23} md={22} lg={20} xl={24}>
         <Baseline>
-        <Wrapper>
+          <Wrapper>
             <Purpose
               imageUrl={house}
               description="КУПИЛИ НЕДВИЖИМОСТЬ"
               subtitle="Вы приобрели недвижимость (квартира, дом, комната, земельный участок с домом)?"
-              subdescription={"Вы можете вернуть до 260 000 рублей с суммы, уплаченной за вашу квартиру или дом, а также можете вернуть до 390 000 рублей с уплаченных процентов по ипотеке."}
+              subdescription={
+                "Вы можете вернуть до 260 000 рублей с суммы, уплаченной за вашу квартиру или дом, а также можете вернуть до 390 000 рублей с уплаченных процентов по ипотеке."
+              }
               price="300 ₽"
             />
             <Purpose
@@ -63,7 +74,9 @@ function Main() {
               <Img src={ip} alt="ip" />
             </div>
             <TextWrapper className="text-wrapper">
-              <Header className="header">Бесплатная регистрация ИП и ООО</Header>
+              <Header className="header">
+                Бесплатная регистрация ИП и ООО
+              </Header>
               <UlList className="list">
                 <ListElement>Подготовим все нужные документы</ListElement>
                 <ListElement>
@@ -72,11 +85,12 @@ function Main() {
                 <ListElement>Вы не платите госпошлину 800 ₽</ListElement>
                 <ListElement>Вам не нужно ходить в налоговую</ListElement>
               </UlList>
-              <Button type="primary" style={{width: "100%"}}>Оставить заявку</Button>
+              <Button type="primary" style={{ width: "100%" }}>
+                Оставить заявку
+              </Button>
             </TextWrapper>
           </RegisterIp>
         </Baseline>
-          
       </Col>
     </Row>
   );

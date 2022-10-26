@@ -9,16 +9,19 @@ function Form() {
   return (
     <FormWrapper>
       <Baseline>
-      <Row justify="center">
-        <Col xs={23} md={22} lg={20} xl={24}>
-          <ContentWrapper className="">
-          <Image src={formImage} alt="form-img" />
-          <FormCard text="Закажите бесплатную консультацию" style={{}} wa={{display: "block"}}/>
-          </ContentWrapper>
-        </Col>
-      </Row>
+        <Row justify="center">
+          <Col xs={23} md={22} lg={20} xl={24}>
+            <ContentWrapper className="">
+              <Image src={formImage} alt="form-img" />
+              <FormCard
+                text="Закажите бесплатную консультацию"
+                style={{}}
+                wa={{ display: "block" }}
+              />
+            </ContentWrapper>
+          </Col>
+        </Row>
       </Baseline>
-      
     </FormWrapper>
   );
 }
