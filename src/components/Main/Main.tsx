@@ -7,7 +7,7 @@ import income from "../../assets/images/purpose/additional-income.svg";
 import insurance from "../../assets/images/purpose/insurance.svg";
 import invest from "../../assets/images/purpose/investitions.svg";
 import {
-  Baseline,
+  BaselineMain,
   Header,
   Img,
   ListElement,
@@ -21,9 +21,9 @@ import { Button, Col, Row } from "antd";
 function Main() {
   return (
     <Row justify="center">
-      <Col xs={23} md={22} lg={20} xl={24}>
-        <Baseline>
-          <Wrapper>
+      <Col xs={23} md={22} lg={24} xl={24}>
+        <BaselineMain>
+        <Wrapper>
             <Purpose
               imageUrl={house}
               description="КУПИЛИ НЕДВИЖИМОСТЬ"
@@ -90,7 +90,9 @@ function Main() {
               </Button>
             </TextWrapper>
           </RegisterIp>
-        </Baseline>
+        </BaselineMain>
+
+
       </Col>
     </Row>
   );

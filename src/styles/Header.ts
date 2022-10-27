@@ -23,26 +23,29 @@ export const MainPage = styled.div`
 
 export const MainPageHeader = styled.div`
   display: flex;
+  margin-top: 5px;
   flex-direction: column;
   @media (min-width: 992px) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
   }
 `;
 
 export const Logotype = styled.img`
-  padding: 20px 16px 16px;
   width: 229px;
+  height: 55px;
   display: flex;
-  @media (max-width: 992px) {
-    margin: 0 auto;
+  @media (min-width: 320px) {
+    margin: 20px auto 0px auto;
+  }
+  @media(max-width: 992px){
+    margin-bottom: 35px; 
   }
 `;
 
 export const MainPagePhone = styled.div`
-  padding-bottom: 36px;
-  padding-top: 36px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
 `;
@@ -50,6 +53,9 @@ export const MainPagePhoneWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+  @media(max-width: 992px){
+    margin-bottom: 35px; 
+  }
 `;
 export const PhoneIcon = styled.img`
   width: 24.14px;
@@ -60,9 +66,10 @@ export const PhoneNumber = styled.a`
   text-decoration: none;
   margin-left: 12px;
   color: #fff;
-  font-family: "Montserrat-Semibold";
+  font-family: "Montserrat-regular";
+  letter-spacing: 0%;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -77,6 +84,7 @@ flex-direction: row;
 width: 100%
 padding: 0px 16px 0px 16px;
 
+}
 `;
 export const WaText = styled.p`
   font-family: "Montserrat-Regular", sans-serif;
@@ -93,6 +101,7 @@ export const ButtonPosition = styled.div`
   display: flex;
   width: max-content;
   height: max-content;
+  margin-bottom: 8px;
   @media (max-width: 992px) {
     margin: 0 auto;
   }
@@ -100,13 +109,14 @@ export const ButtonPosition = styled.div`
 
 export const HeaderParagraph = styled.p`
   color: #fff;
-  font-family: "Montserrat-Sebmibold", sans-serif;
+  font-family: "Montserrat-semibold", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 65px;
   @media (min-width: 1200px) {
     font-size: 54px;
+    margin-bottom: 35px;
   }
 `;
 export const SubParagraph = styled.p`
@@ -115,9 +125,11 @@ export const SubParagraph = styled.p`
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 22px;
+  margin-bottom: 20px;
+  line-height: 120%;
   @media (min-width: 1200px) {
     font-size: 24px;
+    max-width: 580px;
   }
 `;
 
@@ -132,12 +144,13 @@ export const Filling = styled.div`
     justify-content: space-between;
     width: 100%;
     margin-top: 93px;
+    padding-top: 0;
   }
   @media (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 105px;
+    margin-top: 115px;
   }
 `;
 

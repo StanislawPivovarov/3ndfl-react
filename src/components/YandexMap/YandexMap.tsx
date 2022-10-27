@@ -1,6 +1,7 @@
 import { YMaps, Map, Placemark, ZoomControl } from "react-yandex-maps";
 import { MapWrapper } from "../../styles/YMaps";
 
+
 const mapState = {
   center: [55.758266, 37.626502],
   zoom: 17,

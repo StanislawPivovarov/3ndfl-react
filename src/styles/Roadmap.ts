@@ -20,7 +20,7 @@ export const WorkWrapper = styled.div`
 export const Circle = styled.div`
   height: 40px;
   width: 40px;
-  background-color: #000;
+  background-color: #262626;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -35,7 +35,7 @@ export const Number = styled.p`
   font-size: 24px;
   display: block;
   text-align: center;
-  font-family: "Montserrat-SemiBold", sans-serif;
+  font-family: "Montserrat-regular", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -46,7 +46,7 @@ export const Number = styled.p`
 `;
 export const Description = styled.p`
   padding-bottom: 15px;
-  font-family: "Montserrat-SemiBold", sans-serif;
+  font-family: "Montserrat-bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -54,6 +54,12 @@ export const Description = styled.p`
   display: flex;
   align-items: center;
   margin-bottom: 0;
+  @media(min-width: 992px){
+    min-width: 852px
+  }
+  @media(min-width: 1200px){
+    width: 1000px
+  }
 `;
 export const Subdescription = styled.p`
   padding-bottom: 50px;
@@ -63,20 +69,48 @@ export const Subdescription = styled.p`
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 0;
+  @media(min-width: 992px){
+    width: 852px
+  }
+  @media(min-width: 1200px){
+    width: 1000px
+  }
 `;
 export const Line = styled.div`
   height: 100%;
   width: 3px;
-  background-color: #000;
+  background-color: #262626;
   margin-left: auto;
   margin-right: auto;
   display: flex;
 `;
 export const Header = styled.h1`
   font-weight: 600;
-  font-size: 36px;
+  font-size: 48px;
   line-height: 44px;
   text-align: center;
   margin-bottom: 65px;
   font-family: "Montserrat-SemiBold";
+  @media(min-width: 320px){
+    font-size: 36px;
+  }
+  @media (min-width: 992px){
+    font-size: 48px
+  }
+`;
+
+export const RoadWrapp = styled.div`
+  margin: 0 30px;
+  display: flex;
+  flex-direction: row;
+`;
+
+export const RoadWord = styled.div`
+@media(min-width: 320px){
+  padding-left: 16px;
+}
+  @media (min-width: 992px) {
+    padding-left: 40px;
+    max-width: 1000px;
+  }
 `;

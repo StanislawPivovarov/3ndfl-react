@@ -6,10 +6,12 @@ export const FormWrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 100%;
   top: 20px;
   position: relative;
   margin: 0 auto 0 auto;
+  @media(min-width: 320px){
+    width: 320px;
+  }
   @media (min-width: 768px) {
     width: 523px;
     top: 52px;
@@ -17,7 +19,7 @@ export const Image = styled.img`
   @media (min-width: 992px) {
     width: 701px;
     position: absolute;
-    right: -42px;
+    right: -33px;
     top: 41px;
   }
   @media (min-width: 1200px) {

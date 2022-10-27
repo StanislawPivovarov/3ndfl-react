@@ -5,25 +5,34 @@ export const Wrapper = styled.div`
   flex-direction: column;
   @media (min-width: 992px) {
     flex-direction: row-reverse;
+    align-items: center;
   }
 `;
 
 export const AdressWrapper = styled.div`
-  margin: 64px 70px 43px 16px;
   background: #fff;
-
-  @media (min-width: 786px) {
-    padding: 64px 65px 32px 43px;
+  @media(min-width: 320px){
+    padding: 32px 16px;
+  }
+  @media(min-width: 768px){
+    padding: 64px 109px 32px 187px;
+    width: 580px;
+    
   }
   @media (min-width: 992px) {
+    margin: 0 30px 0 0;
     position: absolute;
     z-index: 10;
     display: flex;
     flex-direction: column;
-  }
-  @media (max-wisth: 768px) {
+    padding: 30px;
     box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
-      0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+    0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+    width: 450px;
+
+  }
+  @media (min-width: 1200px) {
+    margin: 0 240px 0 0;
   }
 `;
 
@@ -34,6 +43,9 @@ export const ContactInfo = styled.h1`
   font-size: 36px;
   line-height: 44px;
   margin-bottom: 16px;
+  @media(min-width: 992px){
+    font-size: 24px;
+  }
 `;
 export const Lists = styled.div`
   list-style-type: none;

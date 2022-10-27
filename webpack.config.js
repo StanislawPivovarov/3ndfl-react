@@ -75,7 +75,11 @@ module.exports = {
                   "link-active-color": "#fff",
                   "primary-color-hover": "#363636",
                   "primary-color-active": "#1F1F1F",
-                  "btn-default-border": "#9FD7E8"
+                  "btn-default-border": "#9FD7E8",
+                  'dropdown-font-size': "16px",
+                  'select-dropdown-font-size': "16px",
+                  'dropdown-selected-bg': "#DADAE0",
+                  'input-hover-border-color': "#DADAE0"
                 },
                 javascriptEnabled: true,
               },

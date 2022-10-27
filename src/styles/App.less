@@ -1,6 +1,7 @@
 @import url("/node_modules/antd/dist/antd.less");
 @import url("/node_modules/antd/dist/antd.css");
 @import url("./button.less");
+@import url("./input.less");
 
 .ant-collapse > .ant-collapse-item > .ant-collapse-header {
   flex-direction: row-reverse;
@@ -16,4 +17,22 @@
 .ant-collapse {
   box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
     0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+}
+.ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder{
+  font-size: 16px;
+}
+.button-form{
+  margin-top: 25px;
+}
+.ant-collapse-header-text{
+  padding: 15px;
+  @media (min-width: 320px) {
+    padding: 0;
+  }
+  @media(min-width: 992px){
+    padding: 15px;
+  }
+}
+.ant-collapse-header{
+  padding: 0;
 }

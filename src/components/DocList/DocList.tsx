@@ -1,14 +1,13 @@
 import React from "react";
 import { Collapse, Row, Col } from "antd";
 import { AccordionWrapper, Header } from "../../styles/Docs";
-import { Baseline } from "../../styles/Main";
-import file from "../../assets/images/paper.svg";
+import { Baseline, BaselineCollapse } from "../../styles/Main";
 import { TextFilling } from "../../styles/Docs";
 const { Panel } = Collapse;
 function Docs() {
   return (
     <AccordionWrapper>
-      <Baseline>
+      <BaselineCollapse>
         <Row justify="center">
           <Col xs={24} md={22} lg={20} xl={24}>
             <Header className="list-docs">Список необходимых документов</Header>
@@ -265,7 +264,7 @@ function Docs() {
             </Collapse>
           </Col>
         </Row>
-      </Baseline>
+      </BaselineCollapse>
     </AccordionWrapper>
   );
 }

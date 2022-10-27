@@ -14,11 +14,12 @@ export const Header = styled.p`
   font-size: 36px;
   line-height: 44px;
   font-family: "Montserrat-SemiBold";
-  @media (max-width: 768px) {
-    text-align: center;
+text-align: center;
+  @media(min-width: 320px){
+    font-size: 36px;
   }
-  @media (min-width: 1200px) {
-    text-align: center;
+  @media (min-width: 992px){
+    font-size: 48px
   }
 `;
 export const TextFilling = styled.p`

@@ -14,26 +14,45 @@ export const WrapperCard = styled.div`
 `;
 
 export const PurposeWrapper = styled.div`
-  padding: 64px 0px 26px 0px;
+  min-height: 732px;
   background-color: #fff;
+  min-height: 732px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  @media(min-width: 320px){
+    width: 320px;
+  }
+  @media(min-width: 768px){
+    width: 510px;
+  }
+  @media(min-width: 992px){
+    width: 320px;
+  }
 `;
 
 export const CardImg = styled.img`
-  height: 200px;
+  
   width: auto;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 15px;
+  @media(min-width: 320px){
+    height: 200px;
+  }
+  @media(min-width: 1200px){
+    height: 253px;
+  }
 `;
 export const PurposeDescription = styled.h2`
+  padding-top: 22px;
+  min-height: 80px;
   font-size: 24px;
   font-family: "Montserrat-SemiBold", sans-serif;
   line-height: 29px;
   text-align: center;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const PurposeSubtitle = styled.p`
   font-weight: 400;
@@ -41,11 +60,19 @@ export const PurposeSubtitle = styled.p`
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 15px;
+  min-height: 72px;
+  @media(max-width: 992px){
+  min-height: 40px;
+  }
 `;
 export const PurposeSubdescription = styled.p`
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 31px;
+  min-height: 120px;
+  @media(max-width: 992px){
+    min-height: 40px;
+    }
 `;
 export const PurposePrice = styled.p`
   font-weight: 700;
@@ -63,7 +90,7 @@ export const FormsCard = styled.div`
 
   display: block;
   @media (min-width: 992px) {
-    width: 480px;
+    width: 400px;
     padding: 100px 0px 100px 0px;
   }
 `;
@@ -83,13 +110,18 @@ export const ButtonWrap = styled.div`
 export const ButtonText = styled.p`
   margin-bottom: 0;
   padding-left: 8px;
+  font-size: 16px;
+  font-family: "Montserrat-regular";
 `;
 export const HeaderP = styled.p`
+  line-height: 32px;
   font-family: OpenSans-Regular;
   font-size: 18px;
 `;
 
 export const InputHeader = styled.p`
+  margin-top: 27px;
+  margin-bottom: 5px;
   font-family: OpenSans-Regular;
   font-size: 14px;
 `;
@@ -99,3 +131,16 @@ export const ButtonAlign = styled.div``;
 export const WhatsapParagraph = styled.p`
   margin-bottom: 0;
 `;
+
+export const FormsCardBottom = styled.div`
+z-index: 10;
+
+display: block;
+@media (min-width: 992px) {
+  width: 480px;
+  padding: 100px 0px 100px 0px;
+}
+@media (min-width: 1200px){
+  margin-left: 110px;
+}
+`

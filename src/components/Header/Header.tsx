@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/main-page/logo.svg";
 import tel from "../../assets/images/main-page/phone.svg";
-import wa from "../../assets/images/main-page/wawhite.svg";
 import {
   Logotype,
   MainPage,
@@ -11,7 +10,6 @@ import {
   PhoneIcon,
   PhoneNumber,
   ButtonWrap,
-  WhatsAppIcon,
   WaText,
   ButtonPosition,
   HeaderParagraph,
@@ -21,16 +19,16 @@ import {
 } from "../../styles/Header";
 import FormCard from "../../Cards/Form";
 import { Button, Col, Row } from "antd";
-import { Baseline } from "../../styles/Main";
+import {BaselineHeader } from "../../styles/Main";
 
 function Header() {
   return (
     <MainPage className="main-page">
-      <Baseline>
+      <BaselineHeader>
         <Row justify="center">
-          <Col xs={23} md={22} lg={20} xl={24}>
+          <Col xs={23} md={22} lg={24} xl={24}>
             <MainPageHeader className="main-page-header">
-              <a href="#">
+              <a href="#" className="logo-link">
                 <Logotype src={logo} className="main-page-logo" alt="logo" />
               </a>
               <MainPagePhone className="main-page-phone">
@@ -94,7 +92,7 @@ function Header() {
             </Filling>
           </Col>
         </Row>
-      </Baseline>
+      </BaselineHeader>
     </MainPage>
   );
 }

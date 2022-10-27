@@ -7,8 +7,9 @@ import {
   ButtonText,
   HeaderP,
   InputHeader,
-  WhatsapParagraph
-} from "../../styles/Cards";
+  WhatsapParagraph,
+  FormsCardBottom
+} from "../../../styles/Cards";
 const { Option } = Select;
 
 interface propsText {
@@ -17,9 +18,9 @@ interface propsText {
   wa: React.CSSProperties;
 }
 
-function FormCard(props: propsText) {
+function FormCardBottom(props: propsText) {
   return (
-    <FormsCard className="form" style={props.style}>
+    <FormsCardBottom className="form" style={props.style}>
       <WrapperCard className="form-wrapper">
         <HeaderP className="form-header">{props.text}</HeaderP>
         <InputHeader className="phone-number">Телефон для связи</InputHeader>
@@ -100,7 +101,7 @@ function FormCard(props: propsText) {
           </div>
         </Form>
       </WrapperCard>
-    </FormsCard>
+    </FormsCardBottom>
   );
 }
-export default FormCard;
+export default FormCardBottom;
