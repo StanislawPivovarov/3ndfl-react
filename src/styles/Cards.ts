@@ -14,13 +14,12 @@ export const WrapperCard = styled.div`
 `;
 
 export const PurposeWrapper = styled.div`
-  min-height: 732px;
   background-color: #fff;
   min-height: 732px;
   display: flex;
   flex-direction: column;
   @media(min-width: 320px){
-    width: 320px;
+    width: 100%;
   }
   @media(min-width: 768px){
     width: 510px;
