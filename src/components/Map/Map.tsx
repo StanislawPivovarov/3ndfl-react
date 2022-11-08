@@ -45,7 +45,7 @@ function Map() {
 
         <Subheader className="social">Мы в соц сетях</Subheader>
         <Row>
-          <Col span={6}>
+          <Col span={8}>
             <SocialWrapper className="wrapper-vk">
               <a href="http://vk.com" target="blank">
                 <SocialIcon src={vk} alt="vk" className="vk-logo" />
@@ -53,7 +53,7 @@ function Map() {
               <Subs className="subs-vk">4501</Subs>
             </SocialWrapper>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
             <SocialWrapper className="wrapper-insta">
               <a href="http://instagram.com" target="blank">
                 <SocialIcon
