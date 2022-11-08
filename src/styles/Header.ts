@@ -23,7 +23,6 @@ export const MainPage = styled.div`
 
 export const MainPageHeader = styled.div`
   display: flex;
-  margin-top: 5px;
   flex-direction: column;
   @media (min-width: 992px) {
     flex-direction: row;
@@ -81,7 +80,7 @@ export const WhatsAppIcon = styled.svg`
 export const ButtonWrap = styled.div`
 display: flex;
 flex-direction: row;
-width: 100%
+width: 100%;
 padding: 0px 16px 0px 16px;
 
 }
@@ -114,7 +113,7 @@ export const HeaderParagraph = styled.p`
   font-weight: 600;
   font-size: 36px;
   @media(min-width: 320px){
-    line-height: 43.88px;
+    line-height: 43.8px;
   }
   @media (min-width: 1200px) {
     font-size: 54px;
