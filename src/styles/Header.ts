@@ -112,8 +112,12 @@ export const HeaderParagraph = styled.p`
   @media(min-width: 320px){
     line-height: 43.8px;
   }
+  @media(min-width: 992px){
+    margin-bottom: 61px;
+  }
   @media (min-width: 1200px) {
     font-size: 54px;
+    line-height: 66px;
     margin-bottom: 35px;
   }
 `;

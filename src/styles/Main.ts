@@ -5,19 +5,20 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   @media (min-width: 320px) {
     grid-template-columns: 100%;
+    row-gap: 64px;
   }
   @media (min-width: 992px) {
-    margin-top: 100px;
     grid-template-columns: 45% 45%;
+    row-gap: 120px
   }
   @media (min-width: 1200px) {
     grid-template-columns: 30% 30% 30%;
     
-    row-gap: 86px;
+    row-gap: 90px;
   }
 `;
 export const RegisterIp = styled.div`
-  padding-top: 32px
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
   @media (min-width: 992px) {
@@ -87,7 +88,7 @@ export const BaselineForm = styled.div`
 display: block;
 margin: 0 auto 0 auto;
 @media(min-width: 320px){
-  width: 100%;ya
+  width: 100%;
 }
 @media (min-width: 768px) {
   width: 510px;
@@ -127,6 +128,7 @@ display: block;
   }
   @media (min-width: 992px) {
     width: 740px;
+    padding: 100px 16px 64px 16px;
   }
   @media (min-width: 1200px) {
     width: 1140px;
