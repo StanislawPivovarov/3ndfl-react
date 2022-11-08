@@ -17,6 +17,7 @@ export const Image = styled.img`
   @media (min-width: 768px) {
     width: 523px;
     top: 52px;
+    z-index: 1;
   }
   @media (min-width: 992px) {
     width: 701px;
