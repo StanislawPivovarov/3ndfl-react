@@ -10,7 +10,9 @@ export const Image = styled.img`
   position: relative;
   margin: 0 auto 0 auto;
   @media(min-width: 320px){
-    width: 320px;
+    width: 310px;
+    display: block;
+    z-index: 21;
   }
   @media (min-width: 768px) {
     width: 523px;

@@ -21,7 +21,7 @@ import { Button, Col, Row } from "antd";
 function Main() {
   return (
     <Row justify="center">
-      <Col xs={23} md={22} lg={24} xl={24}>
+      <Col span={24}>
         <BaselineMain>
         <Wrapper>
             <Purpose

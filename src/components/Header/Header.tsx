@@ -25,8 +25,6 @@ function Header() {
   return (
     <MainPage className="main-page">
       <BaselineHeader>
-        <Row justify="center">
-          <Col xs={23} md={22} lg={24} xl={24}>
             <MainPageHeader className="main-page-header">
               <a href="#" className="logo-link">
                 <Logotype src={logo} className="main-page-logo" alt="logo" />
@@ -90,8 +88,6 @@ function Header() {
                 wa={{ display: "none" }}
               />
             </Filling>
-          </Col>
-        </Row>
       </BaselineHeader>
     </MainPage>
   );

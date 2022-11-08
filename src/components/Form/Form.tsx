@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
-import { Baseline, BaselineForm } from "../../styles/Main";
+import {BaselineForm } from "../../styles/Main";
 import formImage from "../../assets/images/form.svg";
 import { ContentWrapper, FormWrapper, Image } from "../../styles/Form";
 import FormCardBottom from "../../Cards/Form/Bottom";

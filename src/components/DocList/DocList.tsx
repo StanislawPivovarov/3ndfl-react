@@ -1,7 +1,7 @@
 import React from "react";
 import { Collapse, Row, Col } from "antd";
 import { AccordionWrapper, Header } from "../../styles/Docs";
-import { Baseline, BaselineCollapse } from "../../styles/Main";
+import { BaselineCollapse } from "../../styles/Main";
 import { TextFilling } from "../../styles/Docs";
 const { Panel } = Collapse;
 function Docs() {

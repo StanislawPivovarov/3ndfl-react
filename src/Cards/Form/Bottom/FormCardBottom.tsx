@@ -21,7 +21,7 @@ interface propsText {
 function FormCardBottom(props: propsText) {
   return (
     <FormsCardBottom className="form" style={props.style}>
-      <WrapperCard className="form-wrapper">
+      <WrapperCard className="form-wrapper-bottom">
         <HeaderP className="form-header">{props.text}</HeaderP>
         <InputHeader className="phone-number">Телефон для связи</InputHeader>
         <Form

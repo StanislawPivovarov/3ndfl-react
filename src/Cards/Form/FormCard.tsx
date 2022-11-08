@@ -60,7 +60,7 @@ function FormCard(props: propsText) {
             <Button
               type="primary"
               htmlType="submit"
-              style={{ width: "100%", marginTop: "16px" }}
+              style={{ width: "100%", marginTop: "24px" }}
               className="button-form"
             >
               ЗАКАЗАТЬ

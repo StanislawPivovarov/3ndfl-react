@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   }
 `;
 export const RegisterIp = styled.div`
-  padding: 32px 0px 100px 0px;
+  padding-top: 32px
   display: flex;
   flex-direction: column;
   @media (min-width: 992px) {
@@ -102,6 +102,9 @@ margin: 0 auto 0 auto;
 export const BaselineHeader = styled.div`
   display: block;
   margin: 0 auto 0 auto;
+  @media (min-width: 320px){
+    padding: 0 16px;
+  }
   @media (min-width: 768px) {
     width: 510px;
   }
@@ -116,6 +119,9 @@ export const BaselineHeader = styled.div`
 export const BaselineMain = styled.div`
 display: block;
   margin: 0 auto 0 auto;
+  @media(min-width: 320px){
+    padding: 64px 16px 64px 16px;
+  }
   @media (min-width: 768px) {
     width: 510px;
   }

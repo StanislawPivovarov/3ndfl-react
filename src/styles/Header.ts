@@ -113,7 +113,9 @@ export const HeaderParagraph = styled.p`
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 65px;
+  @media(min-width: 320px){
+    line-height: 43.88px;
+  }
   @media (min-width: 1200px) {
     font-size: 54px;
     margin-bottom: 35px;

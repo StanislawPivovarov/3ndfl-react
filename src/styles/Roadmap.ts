@@ -100,7 +100,6 @@ export const Header = styled.h1`
 `;
 
 export const RoadWrapp = styled.div`
-  margin: 0 30px;
   display: flex;
   flex-direction: row;
 `;

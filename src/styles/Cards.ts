@@ -10,6 +10,7 @@ export const WrapperCard = styled.div`
 
   @media (max-width: 768px) {
     padding: 16px 16px 24px 16px;
+    margin-top: 48px;
   }
 `;
 
@@ -129,6 +130,8 @@ export const ButtonAlign = styled.div``;
 
 export const WhatsapParagraph = styled.p`
   margin-bottom: 0;
+  font-family: OpenSans-regular;
+  font-size: 18px;
 `;
 
 export const FormsCardBottom = styled.div`
