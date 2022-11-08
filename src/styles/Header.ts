@@ -27,7 +27,7 @@ export const MainPageHeader = styled.div`
   @media (min-width: 992px) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
   }
 `;
 
@@ -52,9 +52,6 @@ export const MainPagePhoneWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-  @media(max-width: 992px){
-    margin-bottom: 35px; 
-  }
 `;
 export const PhoneIcon = styled.img`
   width: 24.14px;
