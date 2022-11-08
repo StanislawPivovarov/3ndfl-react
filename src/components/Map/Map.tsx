@@ -25,7 +25,7 @@ function Map() {
         <ContactInfo className="contact-info">
           Контактная информация
         </ContactInfo>
-        <Subheader className="adress">Адрес</Subheader>
+        <Subheader className="adress">Адрес</Subheader> 
         <Lists>
           <ListElement>г. Москва, Новая Площадь, д. 6</ListElement>
           <ListElement>г. Санкт-Петербург, ул. Гороховая, д. 46</ListElement>

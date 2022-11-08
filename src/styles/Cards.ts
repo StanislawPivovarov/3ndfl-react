@@ -135,6 +135,9 @@ export const FormsCardBottom = styled.div`
 z-index: 10;
 
 display: block;
+@media (min-width: 320px){
+  width: 100%;
+}
 @media (min-width: 992px) {
   width: 480px;
   padding: 100px 0px 100px 0px;

@@ -87,7 +87,7 @@ export const BaselineForm = styled.div`
 display: block;
 margin: 0 auto 0 auto;
 @media(min-width: 320px){
-  width: 320px;
+  width: 100%;ya
 }
 @media (min-width: 768px) {
   width: 510px;
