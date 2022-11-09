@@ -26,15 +26,20 @@ export const RegisterIp = styled.div`
   }
 `;
 export const Img = styled.img`
-  width: 200px;
+  width: 243px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  @media (min-width: 992px) {
+  @media(min-width: 992px){
+    width: 353px;
+    margin-top: 39px;
+  }
+  @media (min-width: 1200px) {
     width: 335px;
     margin-left: 61px;
     margin-top: 39px;
   }
+  
 `;
 export const Header = styled.p`
   text-transform: uppercase;
@@ -128,10 +133,11 @@ display: block;
   }
   @media (min-width: 992px) {
     width: 740px;
-    padding: 100px 16px 64px 16px;
+    padding: 100px 16px 100px 16px;
   }
   @media (min-width: 1200px) {
     width: 1140px;
+    margin-bottom: 150px;
   }
 `
 

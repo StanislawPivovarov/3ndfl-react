@@ -30,12 +30,7 @@ export const CardImg = styled.img`
   width: auto;
   margin-right: auto;
   margin-left: auto;
-  @media(min-width: 320px){
     height: 200px;
-  }
-  @media(min-width: 1200px){
-    height: 253px;
-  }
 `;
 export const PurposeDescription = styled.h2`
   padding-top: 22px;

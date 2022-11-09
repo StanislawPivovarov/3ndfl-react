@@ -5,7 +5,7 @@ import { MapWrapper } from "../../styles/YMaps";
 const mapState = {
   center: [55.758266, 37.626502],
   zoom: 17,
-  behaviors: ["disable('scrollZoom')", "enable('drag')"],
+  behaviors: ["drag"],
 };
 
 function MyPlacemark() {
