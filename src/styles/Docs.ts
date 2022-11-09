@@ -6,7 +6,8 @@ export const AccordionWrapper = styled.div`
   background-image: url(${Background});
   background-repeat: no-repeat;
   background-size: inherit;
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
+    background-size: 244px;
   }
 `;
 export const Header = styled.p`
@@ -27,3 +28,13 @@ export const TextFilling = styled.p`
   font-size: 18px;
   font-family: "Montserrat-regular";
 `;
+
+export const PositionWrapper = styled.div`
+  @media(min-width: 1200px){
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  }
+`

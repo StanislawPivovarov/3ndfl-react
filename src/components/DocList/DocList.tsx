@@ -1,6 +1,6 @@
 import React from "react";
 import { Collapse, Row, Col } from "antd";
-import { AccordionWrapper, Header } from "../../styles/Docs";
+import { AccordionWrapper, Header, PositionWrapper } from "../../styles/Docs";
 import { BaselineCollapse } from "../../styles/Main";
 import { TextFilling } from "../../styles/Docs";
 const { Panel } = Collapse;
@@ -8,9 +8,8 @@ function Docs() {
   return (
     <AccordionWrapper>
       <BaselineCollapse>
-        <Row justify="center">
-          <Col xs={24} md={22} lg={20} xl={24}>
-            <Header className="list-docs">Список необходимых документов</Header>
+      <PositionWrapper>
+      <Header className="list-docs">Список необходимых документов</Header>
             <Collapse accordion className="accordion">
               <Panel
                 header="Необходимые документы при имущественном вычете при покупке квартиры"
@@ -262,8 +261,8 @@ function Docs() {
                 </TextFilling>
               </Panel>
             </Collapse>
-          </Col>
-        </Row>
+      </PositionWrapper>
+
       </BaselineCollapse>
     </AccordionWrapper>
   );

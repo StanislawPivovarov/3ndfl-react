@@ -163,6 +163,9 @@ margin: 0 auto 0 auto;
   width: 932px;
 }
 @media(min-width: 1200px){
-  width: 960px;
+  width: 1140px;
+  display: flex;
+    flex-direction: row-reverse;
+  ;
 }
 `
