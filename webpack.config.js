@@ -35,20 +35,8 @@ module.exports = {
           },
         },
       },
-
       {
-        test: /\.svg$/i,
-        include: [__dirname + "/src"],
-        use: ["file-loader"],
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: {
-          loader: "file-loader",
-        },
-      },
-      {
-        test: /\.(ttf|eot|woff|svg|woff2)$/,
+        test: /\.(ttf|eot|woff|svg|woff2|png)$/,
         loader: "file-loader",
       },
       {
